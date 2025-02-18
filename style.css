@@ -1,0 +1,283 @@
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 5rem;
+}
+
+.email {
+    font-size: 14px;
+    font-weight: 38px;
+}
+
+.sosial {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sosial a {
+    text-decoration: none;
+    color: antiquewhite;
+    transition: all 0.3s ease-in-out;
+}
+
+.sosial a:hover {
+    color: white;
+}
+
+hr {
+    margin: 0 4.5rem;
+    color: antiquewhite;
+}
+
+.hero {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.heading {
+    margin-top: 1rem;
+    font-size: 38px;
+    line-height: 50px;
+    align-items: center;
+    background: linear-gradient(to right, grey,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid white;
+    color: grey;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: rgb(94, 92, 90);
+    gap: 40px;
+}
+
+.client-logo {
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3 ease-in-out;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.skill {
+    padding: 3rem 5rem;
+    background-color: black;
+}
+
+.skill h2 {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    gap: 40px;
+}
+
+.skill-card {
+    background-color: rgb(55, 54, 54);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.skill-image {
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-image:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.skill-name {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    color: grey;
+}
+
+.skill-name:hover {
+    color: white;
+}
+
+.project {
+    margin: 3rem 5rem;
+}
+
+.project h2{
+    font-size: 28px;
+    text-align: center;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+.project-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.project-name {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,textarea{
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    outline: none;
+}
+
+footer {
+    background-color: #111;  /* Warna latar belakang footer menjadi hitam */
+    color: #fff;  /* Warna teks menjadi putih */
+    padding: 2rem 0;  /* Memberikan jarak atas dan bawah sebesar 2rem */
+    font-size: 14px;  /* Menentukan ukuran teks footer */
+}
+
+/* Mengatur kontainer agar tidak terlalu lebar dan tetap di tengah */
+.container {
+    width: 90%;  /* Menggunakan 90% dari lebar layar */
+    max-width: 1200px;  /* Membatasi lebar maksimum agar tetap rapi di layar besar */
+    margin: 0 auto;  /* Membuat elemen berada di tengah secara horizontal */
+}
+
+/* Styling untuk konten utama footer */
+.footer-content {
+    display: flex;  /* Menggunakan flexbox untuk membuat layout horizontal */
+    justify-content: space-between;  /* Menyebarkan elemen secara merata */
+    align-items: center;  /* Menyamakan posisi vertikal elemen */
+    flex-wrap: wrap;  /* Membuat elemen turun ke bawah jika layar terlalu kecil */
+    text-align: center;  /* Memastikan teks tetap rapi pada layar kecil */
+    gap: 2rem;  /* Memberikan jarak antar elemen footer */
+}
+
+/* Styling untuk setiap bagian dalam footer */
+.footer-map, .footer-about, .footer-social {
+    flex: 1;  /* Membagi ruang agar ketiga elemen memiliki ukuran yang sama */
+    min-width: 250px;  /* Mencegah elemen menjadi terlalu kecil pada layar kecil */
+}
+
+/* Styling untuk judul di dalam footer */
+.footer h3 {
+    font-size: 16px;  /* Ukuran teks judul */
+    margin-bottom: 1rem;  /* Memberikan jarak bawah agar lebih rapi */
+    color: #f8d210;  /* Warna teks kuning untuk aksen */
+}
+
+/* Styling untuk Google Maps */
+.footer-map iframe {
+    width: 100%;  /* Memastikan iframe (Google Maps) mengisi seluruh lebar kontainer */
+    height: 150px;  /* Menentukan tinggi iframe */
+    border-radius: 10px;  /* Membuat sudut iframe sedikit membulat */
+}
+
+/* Styling untuk ikon media sosial */
+.social-icons {
+    display: flex;  /* Mengatur ikon agar sejajar secara horizontal */
+    justify-content: center;  /* Memposisikan ikon di tengah */
+    gap: 15px;  /* Memberikan jarak antar ikon */
+}
+
+/* Styling untuk gambar ikon media sosial */
+.social-icons a img {
+    width: 30px;  /* Menentukan ukuran ikon */
+    height: 30px;  /* Menyamakan tinggi ikon dengan lebarnya */
+    transition: transform 0.3s ease;  /* Menambahkan efek transisi saat hover */
+}
+
+/* Efek hover untuk ikon media sosial */
+.social-icons a:hover img {
+    transform: scale(1.2);  /* Memperbesar ikon saat cursor diarahkan */
+}
+
+/* Styling untuk bagian bawah footer (copyright) */
+.footer-bottom {
+    text-align: center;  /* Memposisikan teks di tengah */
+    border-top: 1px solid #444;  /* Memberikan garis pembatas tipis di atas */
+    padding-top: 1rem;  /* Menambahkan jarak antara teks dan garis pembatas */
+    margin-top: 1.5rem;  /* Memberikan jarak antara footer-content dan footer-bottom */
+}
